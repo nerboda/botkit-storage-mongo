@@ -26,7 +26,7 @@ module.exports = function(config) {
 
     var storage = {};
 
-    var tables = ['teams', 'channels', 'users'];
+    var tables = [];
     // if config.tables, add to the default tables
     config.tables && config.tables.forEach(function(table) {
         if (typeof table === 'string') tables.push(table);
